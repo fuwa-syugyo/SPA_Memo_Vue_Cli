@@ -37,9 +37,5 @@ export default createStore({
       state.memos = state.memos.filter(memo => memo.id !== id)
     }
   },
-  actions: {
-  },
-  modules: {
-  },
   plugins: [vuexPersist.plugin]
 })
