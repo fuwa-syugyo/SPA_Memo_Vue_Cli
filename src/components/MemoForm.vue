@@ -1,6 +1,12 @@
 <template>
-  <div><input type="text" v-model="title"></div>
-  <div><textarea v-model="description"></textarea></div>
+  <div>
+    <label for="title">タイトル:</label>
+    <input type="text" v-model="title">
+  </div>
+  <div>
+    <label for="description">内容:</label>
+    <textarea v-model="description"></textarea>
+  </div>
   <div class="center">
     <button @click="save">保存</button>
     <button @click="remove" v-if="memo.id">削除</button>
